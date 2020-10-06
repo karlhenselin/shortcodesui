@@ -3,7 +3,7 @@
 Plugin Name: ShortCodes UI
 Plugin URI: http://en.bainternet.info
 Description: Admin UI for creating ShortCodes in WordPress removing the need for you to write any code.
-Version: 1.9.8
+Version: 2.0.0
 Author: Bainternet
 Author URI: http://en.bainternet.info
 */
