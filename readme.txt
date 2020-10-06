@@ -75,7 +75,6 @@ Simply use the <a href=\"http://wordpress.org/tags/shortcodes-ui/?forum_id=10\">
 2.0.0 
 Update JS .live to use .on function so that it works in WP 5.5.1.
 Don't use the create_function deprecated PHP function.
-Fix 2 bugs where paretheses were wrong on count functions in shortcode-maker.php.
 
 1.9.9
 Added the shortcode template varible to advanced shortcode using the `$sc_template` var.
