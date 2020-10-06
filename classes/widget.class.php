@@ -45,5 +45,14 @@ class ShortcodesUI extends WP_Widget {
 		$instance['content'] = strip_tags( $new_instance['content'] );
 		return $instance;
 	}
+
+	public function register_ShortcodesUI_widget($attr){
+	register_widget( "ShortcodesUI" );
 }
-add_action( 'widgets_init', create_function( '', 'register_widget( "ShortcodesUI" );' ) );
+
+}
+
+//add_action( 'widgets_init', create_function( '', 'register_widget( "ShortcodesUI" );' ) );
+
+
+add_action( 'widgets_init', array($this,'register_ShortcodesUI_widget') );
