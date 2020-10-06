@@ -1,10 +1,10 @@
 === ShortCodes UI ===
-Contributors: bainternet 
+Contributors: bainternet, Karl
 Donate link:http://en.bainternet.info/donations
 Tags: shortcode, shortcodes ui, shortcode maker, shortcode generator, shortcodes, snippet, snippet manager, snippet ui, editor templates
 Requires at least: 2.9.2
-Tested up to: 4.0.0
-Stable tag: 1.9.9
+Tested up to: 5.5.1
+Stable tag: 2.0.0
 
 This Plugin adds an admin UI for creating shortcodes without the need to code, edit code, or even know code.
  

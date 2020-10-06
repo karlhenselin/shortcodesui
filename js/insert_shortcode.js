@@ -42,7 +42,7 @@ var shui_editor = "visual";
 //insert shortcode
 jQuery(document).ready(function() {
 	//insert shortcode
-	jQuery(".insert_shortcode").live('click', function() {
+	jQuery("body").on('click','.insert_shortcode', function() {
 		var shortcode = "";
 		var attr_val = "";
 		shortcode = "[" + walker.tag;
@@ -89,14 +89,14 @@ jQuery(document).ready(function() {
 		);
     }
     
-	jQuery("#qt_content_shui").live("click",function() {
+	jQuery("body").on("click","#qt_content_shui",function() {
 	    shui_editor = "html";
 	    selected_content = jQuery("#content").getSelection().text;
 	    SimpleBox(null,"admin-ajax.php?action=sh_ui_panel","ShortCodes UI");
 	 }); 
 	
 	//render snippet
-	jQuery(".render_shortcode").live("click", function() {
+	jQuery("body").on("click", ".render_shortcode", function() {
 		var shortcode = "";
 		var attr_val = "";
 		shortcode = "[" + walker.tag;

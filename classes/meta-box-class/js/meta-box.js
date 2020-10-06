@@ -134,7 +134,7 @@ jQuery(document).ready(function($) {
    * repater Field
    * @since 1.1
    */  
-  $(".at-re-toggle").live('click', function() {
+  $("body").on('click', '.at-re-toggle',function() {
     $(this).prev().toggle('slow');
   });
   
@@ -226,7 +226,7 @@ jQuery(document).ready(function($) {
   
   load_images_muploader();
   //delete img button
-  jQuery('.at-delete_image_button').live('click', function(e){
+  jQuery('body').on('click', '.at-delete_image_button', function(e){
     var field_id = jQuery(this).attr("rel");
     var at_id = jQuery(this).prev().prev();
     var at_src = jQuery(this).prev();
@@ -261,7 +261,7 @@ jQuery(document).ready(function($) {
   //upload button
     var formfield1;
     var formfield2;
-    jQuery('.at-upload_image_button').live('click',function(e){
+    jQuery('body').on('click','.at-upload_image_button', function(e){
       formfield1 = jQuery(this).prev();
       formfield2 = jQuery(this).prev().prev();      
       tb_show('', 'media-upload.php?post_id='+ jQuery('#post_ID').val() + '&type=image&amp;TB_iframe=true');
@@ -381,11 +381,11 @@ function load_code_editor(){
  */
 function load_color_picker(){
   if ($.farbtastic){//since WordPress 3.5
-    $('.at-color').live('focus', function() {
+    $('body').on('focus','.at-color', function() {
       load_colorPicker_enable($(this).next());
     });
 
-    $('.at-color').live('focusout', function() {
+    $('body').on('focusout', '.at-color', function() {
       hide_colorPicker($(this).next());
     });
 
@@ -394,7 +394,7 @@ function load_color_picker(){
      *
      * @since 1.0
      */
-    $('.at-color-select').live('click', function(){
+    $('body').on('click','.at-color-select', function(){
       if ($(this).next('div').css('display') == 'none')
         load_colorPicker_enable($(this));
       else
